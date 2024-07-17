@@ -1,7 +1,7 @@
 <?php 
     include "header.php" ;
 
-    if(isset($_SESSION['usuario']) && $_SESSION['usuario']['id'] == 1) {
+    if(isset($_SESSION['usuario']) && $_SESSION['usuario']['rol'] == 1) {
 
 ?>
 

@@ -2,7 +2,7 @@
     include "header.php" ;
 
     if(isset($_SESSION['usuario']) && 
-        $_SESSION['usuario']['id'] == 1 || $_SESSION['usuario']['id'] == 2) {
+        $_SESSION['usuario']['id'] == 1 || $_SESSION['usuario']['rol'] == 2) {
 
 ?>
 <!-- Page Content -->
