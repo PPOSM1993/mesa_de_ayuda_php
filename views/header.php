@@ -15,6 +15,8 @@ session_start();
     <link rel="stylesheet" href="../public/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../public/css/plantilla.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" type="" href="../public/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../public/css/responsive.bootstrap4.css">
 
 </head>
 
