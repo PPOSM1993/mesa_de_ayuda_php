@@ -1,5 +1,5 @@
 <!-- Modal -->
-<form action="" method="POST" id="frmAgregarUsuario" onSubmit="return agregarUsuario()">
+<form action="" method="POST" id="frmAgregarUsuario" onSubmit="return agregarNuevoUsuario()">
     <div class="modal fade" id="modalAgregarUsuarios" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -74,9 +74,9 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="rolUsuario">Rol de Usuario</label>
-                            <select class="custom-select form-control form-control-sm" required id="rolUsuario"
-                                name="rolUsuario">
+                            <label for="idRol">Rol de Usuario</label>
+                            <select class="custom-select form-control form-control-sm" required id="idRol"
+                                name="idRol">
                                 <option selected>----------</option>
                                 <option value="1">Cliente</option>
                                 <option value="2">Administrador</option>
@@ -87,8 +87,8 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="descripcion">Descripcion</label>
-                            <textarea name="descripcion" id="descripcion" cols="30" rows="3"
+                            <label for="ubicacion">Descripcion</label>
+                            <textarea name="ubicacion" id="ubicacion" cols="30" rows="3"
                                 class="form-control form-control-sm" placeholder="Ingrese Descripcion" required></textarea>
                         </div>
                     </div>

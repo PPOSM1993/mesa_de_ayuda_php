@@ -8,7 +8,7 @@ function loginUsuario() {
         if(respuesta == 1) {
             window.location.href = "views/inicio.php"
         } else {
-            Swal.fire(":(", "Error al entrar!" +  respuesta, " error")
+            Swal.fire(":(", "Error al entrar!" +  respuesta, "error")
         }
     },
   });
