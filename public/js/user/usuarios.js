@@ -12,6 +12,7 @@ function agregarNuevoUsuario() {
       if (respuesta == 1) {
         $("#tablaUsuarioLoad").load("users/tablaUsuarios.php");
         $("#frmAgregarUsuario")[0].reset();
+        $("#modalAgregarUsuarios").modal('hide');
         Swal.fire(":D", "Agregado Correctamente!", "success");
       } else {
         Swal.fire(":(", "Error al agregar! " + respuesta, "error");
@@ -43,3 +44,22 @@ function obtenerDatosUsuario(idUsuario) {
     },
   });
 }
+
+
+function actualizarUsuario() {
+  $.ajax({
+    type: "POST",
+    data:$("#frmActualizarUsuario").serialize(),
+    url: "../procesos/users/crud/actualizarUsuario.php",
+    success:function(respuesta) {
+      respuesta = respuesta.trim();
+      if (respuesta == 1) {
+        $("#tablaUsuarioLoad").load("users/tablaUsuarios.php");
+        $("#modalActualizarUsuarios").modal('hide');
+        Swal.fire(":D", "Actualizado Correctamente!", "success");
+      } else {
+        Swal.fire(":(", "Error al Actualizar! " + respuesta, "error");
+      }    }
+  });
+  return false;
+} 
