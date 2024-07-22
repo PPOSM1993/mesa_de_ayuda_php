@@ -71,7 +71,11 @@ $respuesta = mysqli_query($conexion, $sql);
                 </td>
                 <td>
 
-                    <button class="btn btn-warning btn-sm">
+                    <button class="btn btn-warning btn-sm"  
+                            data-toggle="modal" 
+                            data-target="#modalActualizarUsuarios" 
+                            onClick="obtenerDatosUsuario(<?php echo $mostrar['idUsuario'] ?>)"
+                    >
                         <i class="fa-solid fa-pen-nib"></i> Actualizar
                     </button>
                     <button class="btn btn-danger btn-sm">

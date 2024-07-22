@@ -29,6 +29,7 @@ if (
 
     <?php
     include "users/modalAgregar.php";
+    include "users/modalActualizar.php";
     include "footer.php";
     ?>
     <script src="../public/js/user/usuarios.js"></script>
